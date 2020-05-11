@@ -145,3 +145,13 @@ footer {
     transform: translateY(0%);
   }
 }
+
+@media (max-width: 640px) {
+  .container {
+    padding: 3rem 3rem 0 3rem;
+  }
+  
+  footer {
+    padding: 3rem;
+  }
+}

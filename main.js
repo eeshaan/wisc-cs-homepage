@@ -6,8 +6,8 @@ btn.addEventListener("click", () => {
     btn.innerHTML = "CHANGE BACK"
     epic()
   } else {
-      btn.innerHTML = "CHANGE"
-      boring()
+    btn.innerHTML = "CHANGE"
+    boring()
   }
 });
 

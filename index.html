@@ -2,27 +2,37 @@
 <html>
 
 <head>
+
   <title>about me</title>
+
   <!--css-->
   <link rel="stylesheet" href="style.css">
+
   <!--responsive meta tag-->
   <meta name="viewport" content="width=device-width">
+
 </head>
 
 <body data-barba="wrapper">
 
+  <div class="drip">
+    <div class="splash0"></div>
+    <div class="splash1"></div>
+  </div>
+
   <main data-barba="container" data-barba-namespace="home">
 
-    <div class="drip">
-      <div class="splash0"></div>
-      <div class="splash1"></div>
-    </div>
     <div class="container">
+
       <header>
         <h2>an overview of my wisco cs journey</h2>
         <img src="me.jpg" alt="this is me">
         <h1>eeshaan pirani &#x1F549;</h1>
         <p class="desc">i'm a second-year cs and philos student :)</p>
+
+        <!--SVGs from iconmonstr.com
+        see iconmonstr.com/license
+        -->
         <div class="icons">
           <ul>
             <li> <a href="https://github.com/eeshaan"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
@@ -48,27 +58,35 @@
           </ul>
         </div>
       </header>
-      <h3>completed courses</h3>
-      <ul>
-        <li><a href="./courses/cs400.html" class="dark-link">400 &mdash; More Data Structures and Project Design and
-            Development (Progamming
-            III)</a></li>
-        <li><a href="./courses/cs300.html" class="dark-link">300 &mdash; Data Structures and Object Oriented Programming
-            (Progamming II)</a>
-        </li>
-        <li><a href="./courses/cs252.html" class="dark-link">252 &mdash; Introduction to Computer Engineering</a></li>
-      </ul>
+
+      <div class="completed-courses">
+        <h3>completed courses</h3>
+        <ul>
+          <li><a href="./courses/cs400.html" class="dark-link">400 &mdash; More Data Structures and Project Design and
+              Development (Progamming III)</a></li>
+          <li><a href="./courses/cs300.html" class="dark-link">300 &mdash; Data Structures and Object Oriented
+              Programming (Progamming II)</a>
+          </li>
+          <li><a href="./courses/cs252.html" class="dark-link">252 &mdash; Introduction to Computer Engineering</a></li>
+        </ul>
+      </div>
+
       <h3>planned courses for fall 2020</h3>
       <ul>
         <li>402 &mdash; Introducing Computer Science to K-12 Students</li>
         <li>354 &mdash; Machine Organization and Programming</li>
         <li>240 &mdash; Introduction to Discrete Mathematics</li>
       </ul>
+
       <h3>projects</h3>
-      <h3>work</h3>
-      <ul>
-        <li>Infosys (Summer 2020)</li>
-      </ul>
+
+      <div class="work">
+        <h3>work</h3>
+        <ul>
+          <li>Infosys (Summer 2020)</li>
+        </ul>
+      </div>
+
       <button type="button">CHANGE</button>
     </div>
 

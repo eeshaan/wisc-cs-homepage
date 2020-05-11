@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
 });
 
 function epic() {
-  body.style.backgroundColor = '#000'
+  body.style.backgroundColor = '#0c0c0c'
   body.style.color = '#fff'
 }
 

@@ -1,6 +1,10 @@
 const body = document.getElementsByTagName('body')[0]
 const btn = document.getElementsByTagName('button')[0]
 
+barba.init({
+  // TODO: define transition
+})
+
 btn.addEventListener("click", () => {
   if (btn.innerHTML === "CHANGE") {
     btn.innerHTML = "CHANGE BACK"

@@ -86,12 +86,19 @@ ul {
 }
 
 .icons ul li a {
-  color: #000;
   outline: none;
 }
 
-.icons ul li a:hover {
-  fill: #aaa;
+.icons ul li a svg {
+  background: #fff;
+  border: solid 2px transparent;
+  border-radius: 100%;
+  transition: all 0.2s;
+}
+
+.icons ul li a svg:hover {
+  border: solid 2px #fff;
+  filter: invert(100%);
 }
 
 .completed-courses ul {

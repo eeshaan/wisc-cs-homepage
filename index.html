@@ -1,104 +1,94 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <title>Eeshaan Pirani</title>
 
-<head>
-
-  <title>about me</title>
-
-  <!--css-->
-  <link rel="stylesheet" href="style.css">
-
-  <!--responsive meta tag-->
-  <meta name="viewport" content="width=device-width">
-
-</head>
-
-<body data-barba="wrapper">
-
-  <div class="drip">
-    <div class="splash0"></div>
-    <div class="splash1"></div>
-  </div>
-
-  <main data-barba="container" data-barba-namespace="home">
-
-    <div class="container">
-
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/pygment_trac.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
       <header>
-        <h2>an overview of my wisco cs journey</h2>
-        <img src="me.jpg" alt="this is me">
-        <h1>eeshaan pirani &#x1F549;</h1>
-        <p class="desc">i'm a second-year cs and philos student :)</p>
-
-        <!--SVGs from iconmonstr.com
-        see iconmonstr.com/license
-        -->
-        <div class="icons">
-          <ul>
-            <li> <a href="https://github.com/eeshaan"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z" />
-                </svg></a> </li>
-            <li> <a href="https://linkedin.com/in/eeshaan-pirani"><svg xmlns="http://www.w3.org/2000/svg" width="40"
-                  height="40" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
-                </svg></a> </li>
-            <li> <a href="mailto:eeshaan@cs.wisc.edu"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
-                </svg></a> </li>
-            <li> <a href="http://eeshaan.life"><svg width="40px" height="40px" viewBox="0 0 97 97"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="48.5" cy="48.5" r="48.5"></circle>
-                  <path
-                    d="M48.5,16 C30.551875,16 16,30.551875 16,48.5 C16,66.448125 30.551875,81 48.5,81 C66.448125,81 81,66.448125 81,48.5 C81,30.551875 66.448125,16 48.5,16 Z M76,49.5 C76,51.38375 75.810111,53.2235 75.4520345,55 L65,55 C65.3282367,51.47175 65.3499383,47.79225 65,44 L75.4520345,44 C75.810111,45.7765 76,47.61625 76,49.5 Z M74,37 L64.3634361,37 C63.3089207,31.801061 61.4669604,27.0503979 59,23 C65.7042952,25.5915119 71.1062775,30.6445623 74,37 Z M58,37 L51,37 L51,22 C54.2648752,25.8706257 56.6886756,31.0402969 58,37 Z M46,22 L46,37 L39,37 C40.3113244,31.0402969 42.7351248,25.8706257 46,22 Z M46,44 L46,55 L37.324231,55 C36.891923,51.09225 36.891923,47.91325 37.324231,44 L46,44 Z M46,60 L46,75 C42.7351248,71.1293743 40.3113244,65.9597031 39,60 L46,60 Z M51,75 L51,60 L58,60 C56.6886756,65.9597031 54.2648752,71.1293743 51,75 Z M51,55 L51,44 L59.675769,44 C60.108077,47.90775 60.108077,51.08675 59.675769,55 L51,55 Z M38,23 C35.5330396,27.0503979 33.6910793,31.801061 32.6365639,37 L23,37 C25.8937225,30.6445623 31.2957048,25.5915119 38,23 Z M21.5479655,44 L32,44 C31.6717633,47.52825 31.6500617,51.20775 32,55 L21.5479655,55 C21.189889,53.2235 21,51.38375 21,49.5 C21,47.61625 21.189889,45.7765 21.5479655,44 Z M23,60 L32.6365639,60 C33.6910793,65.198939 35.5330396,69.9496021 38,74 C31.2957048,71.4084881 25.8937225,66.3554377 23,60 Z M59,74 C61.4669604,69.9496021 63.3089207,65.198939 64.3634361,60 L74,60 C71.1062775,66.3554377 65.7042952,71.4084881 59,74 Z"
-                    fill="#FFFFFF"></path>
-                </svg></a> </li>
-          </ul>
-        </div>
-      </header>
-
-      <div class="completed-courses">
-        <h3>completed courses</h3>
+        <h1>Eeshaan Pirani</h1>
+        <p>A Second-Year CS + Philos Student</p>
+        <!-- <p class="view">
+          <a href="http://github.com/orderedlist/minimal"
+            >View the Project on GitHub <small>orderedlist/minimal</small></a
+          >
+        </p>
         <ul>
-          <li><a href="./courses/cs400.html" class="dark-link">400 &mdash; More Data Structures and Project Design and
-              Development (Progamming III)</a></li>
-          <li><a href="./courses/cs300.html" class="dark-link">300 &mdash; Data Structures and Object Oriented
-              Programming (Progamming II)</a>
+          <li>
+            <a href="https://github.com/orderedlist/minimal/zipball/master"
+              >Download <strong>ZIP File</strong></a
+            >
           </li>
-          <li><a href="./courses/cs252.html" class="dark-link">252 &mdash; Introduction to Computer Engineering</a></li>
-        </ul>
-      </div>
+          <li>
+            <a href="https://github.com/orderedlist/minimal/tarball/master"
+              >Download <strong>TAR Ball</strong></a
+            >
+          </li>
+          <li>
+            <a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a>
+          </li>
+        </ul> -->
+      </header>
+      <section>
+        <h2>About</h2>
+        <h3>Things I like</h3>
 
-      <h3>planned courses for fall 2020</h3>
-      <ul>
-        <li>402 &mdash; Introducing Computer Science to K-12 Students</li>
-        <li>354 &mdash; Machine Organization and Programming</li>
-        <li>240 &mdash; Introduction to Discrete Mathematics</li>
-      </ul>
-
-      <h3>projects</h3>
-
-      <div class="work">
-        <h3>work</h3>
         <ul>
-          <li>Infosys (Summer 2020)</li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Raveena_Aurora" target="_blank">Raveena</a>
+          </li>
+          <li>my chin hairs</li>
+          <!-- <li>
+            <a href="https://linkedin.com/in/madanrajhari" class="dark-link" target="_blank"
+              >madan raj hari</a
+            >
+          </li> -->
+          <li>kombucha &mdash; or just fermented things in general</li>
+          <li>programming fonts with sexy ligatures</li>
         </ul>
-      </div>
-
-      <button type="button">CHANGE</button>
+        <h3>Courses</h3>
+        <ul>
+          <li>
+            <!-- <a href="./courses/cs400.html" class="dark-link"> -->
+            400 &mdash; More Data Structures and Project Design and Development (Progamming III)
+            <!-- </a> -->
+          </li>
+          <li>
+            <!-- <a href="./courses/cs300.html" class="dark-link"> -->
+            300 &mdash; Data Structures and Object Oriented Programming (Progamming II)
+            <!-- </a> -->
+          </li>
+          <li>
+            <!-- <a href="./courses/cs252.html" class="dark-link"> -->
+            252 &mdash; Introduction to Computer Engineering
+            <!-- </a> -->
+          </li>
+        </ul>
+        <h3>Places I've worked</h3>
+        <ul>
+          <li>Infosys</li>
+        </ul>
+      </section>
+      <footer>
+        <p>Made in Madison with &#x1f9c0; &amp; &hearts;</p>
+        <p>
+          <small
+            >Site based on <a href="https://github.com/orderedlist">minimal</a> by
+            <a href="https://github.com/orderedlist">orderedlist</a>.<br />
+            Inspired by <a href="http://pages.cs.wisc.edu/~aws">Aws</a>.
+          </small>
+        </p>
+      </footer>
     </div>
-
-  </main>
-
-  <footer>made in madison with &#x1f9c0; &amp; &hearts;.</footer>
-
-  <script src="https://unpkg.com/@barba/core"></script>
-  <script src="main.js"></script>
-
-</body>
-
+    <script src="./src/js/scale.fix.js"></script>
+  </body>
 </html>

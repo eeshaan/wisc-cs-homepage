@@ -1,4 +1,6 @@
+.DS_Store
 *.swp
 demo
 old_joke
+src/fonts
 google*.html

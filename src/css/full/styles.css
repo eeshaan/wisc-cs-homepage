@@ -54,6 +54,10 @@ h2 {
   color: #2af5a1;
 }
 
+h3 {
+  margin: 0 0 10px;
+}
+
 a {
   color: #00c2ff;
   text-decoration: none;

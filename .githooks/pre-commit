@@ -1,0 +1,6 @@
+#!/bin/sh
+date -Is >> last_updated.txt # Linux only
+git add last_updated.txt
+echo "last_updated.txt updated with current date."
+
+exit 0

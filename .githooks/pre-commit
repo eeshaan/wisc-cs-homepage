@@ -1,5 +1,5 @@
 #!/bin/sh
-date -Is >> last_updated.txt # Linux only
+echo -n $(date -Is) > last_updated.txt # Linux only; using echo -n for 1-line output
 git add last_updated.txt
 echo "last_updated.txt updated with current date."
 

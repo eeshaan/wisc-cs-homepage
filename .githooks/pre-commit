@@ -1,6 +1,24 @@
 #!/bin/sh
-echo -n $(date -Is) > last_updated.txt # Linux only; using echo -n for 1-line output
+
+# Update last_updated.txt
+echo -n $(date -Is) > last_updated.txt
 git add last_updated.txt
 echo "last_updated.txt updated with current date."
+
+# Update sitemap.xml
+current_date=$(date -Is)
+cat > sitemap.xml << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://pages.cs.wisc.edu/~eeshaan/index.html</loc>
+    <lastmod>${current_date}</lastmod>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+EOF
+
+git add sitemap.xml
+echo "sitemap.xml updated with current date."
 
 exit 0

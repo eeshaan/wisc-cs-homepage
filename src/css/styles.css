@@ -58,6 +58,11 @@ h3 {
   margin: 0 0 10px;
 }
 
+h3 .subtitle {
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
 a {
   color: #00c2ff;
   text-decoration: none;
@@ -128,6 +133,11 @@ header {
 
 header img {
   filter: grayscale(0.75) brightness(1.15) drop-shadow(-10px -10px #2af5a1);
+  transition: filter 0.3s ease-in-out;
+}
+
+header img:hover {
+  filter: grayscale(0.75) brightness(1.15) drop-shadow(10px 10px #bd00ff);
 }
 
 header ul {
@@ -215,6 +225,12 @@ footer {
 
 .name {
   margin: 20px 0 0 0;
+}
+
+.name .pronouns {
+  font-size: 0.6em;
+  font-weight: normal;
+  vertical-align: middle;
 }
 
 .flipped {

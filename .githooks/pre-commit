@@ -1,12 +1,23 @@
 #!/bin/sh
 
-# Update last_updated.txt
-echo -n $(date -Is) > last_updated.txt
+# function to get ISO 8601 formatted date
+get_iso_date() {
+    if date -I &> /dev/null; then
+        # GNU date (Linux)
+        date -Is
+    else
+        # BSD date (macOS)
+        date -u +"%Y-%m-%dT%H:%M:%SZ"
+    fi
+}
+
+# update last_updated.txt
+echo -n $(get_iso_date) > last_updated.txt
 git add last_updated.txt
 echo "last_updated.txt updated with current date."
 
-# Update sitemap.xml
-current_date=$(date -Is)
+# update sitemap.xml
+current_date=$(get_iso_date)
 cat > sitemap.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

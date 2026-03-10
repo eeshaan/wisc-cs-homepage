@@ -1,18 +1,12 @@
 #!/bin/sh
 
-# function to get ISO 8601 formatted date
+# function to get portable ISO 8601 formatted date in UTC
 get_iso_date() {
-    if date -I &> /dev/null; then
-        # GNU date (Linux)
-        date -Is
-    else
-        # BSD date (macOS)
-        date -u +"%Y-%m-%dT%H:%M:%SZ"
-    fi
+    date -u +"%Y-%m-%dT%H:%M:%SZ"
 }
 
 # update last_updated.txt
-echo -n $(get_iso_date) > last_updated.txt
+printf '%s' "$(get_iso_date)" > last_updated.txt
 git add last_updated.txt
 echo "last_updated.txt updated with current date."
 
